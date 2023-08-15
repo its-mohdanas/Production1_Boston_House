@@ -7,8 +7,7 @@ Created on Tue Aug 15 18:37:17 2023
 
 **Step 1:** Create new repo make sure you DON'T crate README.md
 
-**Step 2:** 
-If you want to add README.md. New file ->save as .md 
+**Step 2:** If you want to add README.md. New file ->save as .md 
 
 **Step 3:** In spyder, you are already in the project directory
 
@@ -26,6 +25,8 @@ If you want to add README.md. New file ->save as .md
 
 
 ______
-> If you want to push to different branch than: Step 8: !git push -u origin branch_name
+👉 If you want to push to different branch than: Step 8: !git push -u origin branch_name
 
-> For the next commit after making any changes, you don't have to do Step 7.
+👉 For the next commit after making any changes, you don't have to do Step 7.
+
+👉 If you want to have same files as git repo. Just run **!git pull origin master**
