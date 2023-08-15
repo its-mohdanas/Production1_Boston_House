@@ -4,7 +4,11 @@ Created on Tue Aug 15 18:37:17 2023
 
 @author: Anas
 """
+# Screenshot
+![Alt Text](https://github.com/its-mohdanas/Production1_Boston_House/blob/master/static/web.png)
 
+
+# Git Commands
 **Step 1:** Create new repo make sure you DON'T crate README.md
 
 **Step 2:** If you want to add README.md. New file ->save as .md 
