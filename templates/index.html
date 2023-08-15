@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integer Prediction Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 570px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            transition: border-color 0.3s;
+        }
+        input[type="number"]:focus {
+            border-color: #007bff;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boston House Prediction</h1>
+    <img src="{{ url_for('static', filename='house.jpg') }}" alt="Houses" style="width: 600px;"><br>
+    
+    <!-- writing python code in html. This code check if result named variable exist, return -->
+    {% if result %}
+        <p> {{result}}</p>
+    {% endif %}
+    
+    <form method="POST" action="/predict">
+        <label>Average number of rooms per dwelling:</label>
+        <input type="number" name="rm" required>
+        <br>
+        <label>Proportion of residential land zoned for lots over 25,000 sq.ft.:</label>
+        <input type="number" name="zn" required>
+        <br>
+        <label>Weighted distances to five Boston employment centres:</label>
+        <input type="number" name="dis" required>
+        <br><br><br>
+        <button type="submit">Prediction</button>
+    </form>
+</body>
+</html>
