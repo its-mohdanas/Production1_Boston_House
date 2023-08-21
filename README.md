@@ -8,7 +8,7 @@ Created on Tue Aug 15 18:37:17 2023
 ![Alt Text](https://github.com/its-mohdanas/Production1_Boston_House/blob/master/static/web.png)
 
 
-# Git Commands
+# Git Commands for pushing project to GitHub
 **Step 1:** Create new repo make sure you DON'T crate README.md
 
 **Step 2:** If you want to add README.md. New file ->save as .md 
@@ -21,7 +21,7 @@ Created on Tue Aug 15 18:37:17 2023
 
 **Step 6:** !git commit -m "Any message, it will be easier to understand that which commit added what"
 
-**Step 7:** !git remote add origin https://github.com/its-mohdanas/Production1_Boston_House.git
+**Step 7:** !git remote add origin `link of repositroy`
 
 **Step 8:** !git push -u origin master
 
